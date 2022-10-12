@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Digitekniikat kurssin 5 tehtävä",
+      "date": "11.10.2022",
+      "reminder": true,
+      "urgent": false,
+      "important": false
+    },
+    {
+      "id": 2,
+      "text": "Mobiiliohjelmointi kurssin 12 tehtävä",
+      "date": "12.10.2022",
+      "reminder": true,
+      "urgent": false,
+      "important": false
+    },
+    {
+      "id": 3,
+      "text": "Mobiiliohjelmoinnin lopputyö",
+      "date": "30.11.2022",
+      "reminder": false,
+      "urgent": false,
+      "important": false
+    }
+  ]
+}

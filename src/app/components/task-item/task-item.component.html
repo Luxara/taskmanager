@@ -1,0 +1,5 @@
+<div [ngClass]="{urgent:task.urgent, important:task.important}" (dblclick)="onToggle(task)" class="task">
+    <h3>{{task.text}} <fa-icon (click)="onDelete(task)" [ngStyle]="{'color':'red'}" [icon]="faTrashCan"></fa-icon></h3>
+    <p>{{task.date}}</p>
+</div>
+

@@ -1,0 +1,28 @@
+<form *ngIf="showAddTask" #taskForm="ngForm" (ngSubmit)="onFormSubmit(taskForm)">
+    <div class="form-control">
+        <label [ngStyle]="{'color':color}" for="text">Task</label>
+        <input [ngStyle]="{'margin-left':'-1px'}" type="text" name="text" [(ngModel)]="text" id="text" placeholder="Write your task here">
+    </div>
+    <div class="form-control">
+        <label [ngStyle]="{'color':color}" for="date">Date</label>
+        <input [ngStyle]="{'margin-left':'-1px'}" type="text" name="date" [(ngModel)]="date" id="date" placeholder="Write the date here">
+    </div>
+    <div>
+        <p [ngStyle]="{'color':color, 'margin-bottom':'10px'}">Urgency</p>
+    </div>
+    <div class="form-control-radio">
+        <div>
+            <input type="radio" id="normal" name="urgency" value="normal" [ngModel]="urgency" required #gender="ngModel">
+            <label [ngStyle]="{'color':color, 'margin-left':'5px', 'margin-right':'25px'}" for="normal">normal</label>
+        </div>
+        <div>
+            <input type="radio" id="css" name="urgency" value="important" [ngModel]="urgency" required #gender="ngModel">
+            <label [ngStyle]="{'color':color, 'margin-left':'5px', 'margin-right':'25px'}" for="important">important</label>
+        </div>
+        <div>
+            <input type="radio" id="javascript" name="urgency" value="urgent" [ngModel]="urgency" required #gender="ngModel">
+            <label [ngStyle]="{'color':color, 'margin-left':'5px', 'margin-right':'25px'}"for="urgent">urgent</label>
+        </div>
+    </div>
+    <input type="submit" [ngStyle]="{'background-color':bcolor}" value="SaveTask" class="btn btn-block">
+</form>
